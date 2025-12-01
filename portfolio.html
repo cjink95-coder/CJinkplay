@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CJINK_playArts | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: url('images/background3.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header {
+      background: rgba(0,0,0,0.75);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 60px;
+      border-radius: 50%;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff4444;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border: 3px solid #fff;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: rgba(0,0,0,0.65);
+      text-align: center;
+      padding: 12px;
+      font-size: 0.9em;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo1.jpg" alt="CJINK Logo">
+    <h1>CJINK_playArts</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="gallery">
+    <img src="images/background4.jpg" alt="Tattoo sample 1">
+    <img src="images/background5.jpg" alt="Tattoo sample 2">
+    <img src="images/background2.jpg" alt="Tattoo sample 3">
+  </section>
+
+  <footer>
+    &copy; 2025 CJINK_playArts – Mythic tattoos & tech rituals.
+  </footer>
+</body>
+</html>
