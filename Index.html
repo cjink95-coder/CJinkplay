@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CJINKAT — Tattoo Studio</title>
+  <meta name="description" content="CJINKAT — Mythic ink meets digital ritual. Curated tattoo art in Kurunegala, Sri Lanka." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo-link" aria-label="CJINKAT home">
+        <img src="images/cjink-logo.png" srcset="images/cjink-logo.png 1x, images/cjink-logo-512.png 2x" alt="CJINKAT logo" class="logo" />
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" style="background-image: url('images/hero.jpg');">
+      <div class="overlay"></div>
+      <div class="hero-content container">
+        <img src="images/cjink-logo.png" alt="CJINKAT logo" class="hero-logo" />
+        <h1 class="hero-title">CJINKAT</h1>
+        <p class="hero-sub">Mythic Ink Meets Digital Ritual — Kurunegala, Sri Lanka</p>
+        <div class="hero-ctas">
+          <a id="book-now" href="https://wa.me/94701352870" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Book now on WhatsApp">Book Now</a>
+          <a href="#gallery" class="btn btn-outline">View Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title">About — CJ (Soul)</h2>
+      <div class="grid-2">
+        <p class="muted">
+          CJ (Soul) — Tattoo Artist & Mythic Architect. Custom designs, cover‑ups, and ritual consults. Studio located in Kurunegala. We blend traditional technique with a modern, mythic aesthetic.
+        </p>
+        <ul class="muted">
+          <li>Custom tattoo designs</li>
+          <li>Cover-ups & restorations</li>
+          <li>Sacred geometry & mythic realism</li>
+          <li>Consultation & aftercare guidance</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="gallery" class="section container">
+      <h2 class="section-title">Gallery</h2>
+      <p class="muted">Click an image to open fullscreen. High-quality photos welcome — replace these with your portfolio images in /images/.</p>
+      <div class="gallery-grid" id="gallery-grid">
+        <figure class="gallery-item">
+          <img src="images/1000030601.jpg" alt="Surreal bath — full back piece" data-caption="Surreal bath — full back piece" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/1000030471.jpg" alt="Full-body ink — eagle, floral" data-caption="Full-body ink — eagle, floral" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/1000030454.jpg" alt="Color sleeves — urban vibe" data-caption="Color sleeves — urban vibe" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/1000030589.jpg" alt="Studio promo layout" data-caption="Studio promo layout" />
+        </figure>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2 class="section-title">Services & Pricing</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Consultation</h3>
+          <p class="muted">Free in-person consultation for custom designs and cover-up plans.</p>
+        </div>
+        <div class="card">
+          <h3>Custom Piece</h3>
+          <p class="muted">Price varies — depends on size, color, and complexity. Contact for estimate.</p>
+        </div>
+        <div class="card">
+          <h3>Cover-up</h3>
+          <p class="muted">Specialized techniques for transforming old tattoos — consult required.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact & Booking</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <p><strong>Studio:</strong> Kurunegala, Sri Lanka</p>
+          <p><strong>Email:</strong> <a href="mailto:cjinkplayarts@gmail.com">cjinkplayarts@gmail.com</a></p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/94701352870" target="_blank" rel="noopener noreferrer">+94 701 352 870</a></p>
+        </div>
+        <div class="contact-card">
+          <form id="booking-form" class="booking-form" aria-label="Booking form">
+            <label>
+              Name
+              <input name="name" type="text" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" />
+            </label>
+            <label>
+              Date
+              <input name="date" type="date" />
+            </label>
+            <label>
+              Message / Tattoo idea
+              <textarea name="message" rows="4" placeholder="Describe your idea"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="socials muted" aria-hidden="false">
+        <a href="https://www.youtube.com/@cjinkplayarts" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.instagram.com/cjp1nkm4ng5g" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@cjpinkmanx" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> CJINK_playArts — Kurunegala, Sri Lanka</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close (Esc)">✕</button>
+    <img class="lightbox-img" id="lightbox-img" alt="" />
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
