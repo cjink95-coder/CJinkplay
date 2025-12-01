@@ -1,0 +1,170 @@
+/* Simple static site CSS — dark tattoo studio vibe */
+
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #000;
+  color: #e6e6e6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/* Container */
+.container { max-width: 1100px; margin: 0 auto; padding: 48px 20px; }
+
+/* Hero */
+.hero {
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+}
+.logo {
+  width: 96px;
+  height: 96px;
+  border-radius: 999px; /* circular display */
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  border: 2px solid rgba(255,255,255,0.06);
+}
+.site-title { font-size: 3.2rem; margin-top: 12px; letter-spacing: .04em; }
+.tagline { color: #cfcfcf; margin-top: 8px; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(255,255,255,0.06);
+  margin-right: 8px;
+  font-weight: 600;
+}
+.btn-primary {
+  background: #e23b3b;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(226,59,59,0.12);
+}
+.btn-ghost {
+  background: transparent;
+  color: #ddd;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Sections */
+.section { padding-top: 48px; padding-bottom: 48px; background: transparent; }
+.muted { color: #bdbdbd; margin-bottom: 12px; }
+
+/* Grid utilities */
+.grid-2 { display: grid; grid-template-columns: 1fr; gap: 24px; }
+@media(min-width:700px){ .grid-2 { grid-template-columns: 1fr 1fr; } }
+
+/* Services list */
+.services { list-style: none; padding-left: 0; color: #e6e6e6; }
+.services li { margin-bottom: 8px; }
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 16px;
+}
+@media(min-width:600px){ .gallery-grid { grid-template-columns: repeat(2,1fr); } }
+@media(min-width:1000px){ .gallery-grid { grid-template-columns: repeat(3,1fr); } }
+
+.thumb { background: #0f0f10; border-radius: 12px; overflow: hidden; }
+.thumb img { width: 100%; height: 240px; object-fit: cover; display: block; cursor: zoom-in; transition: transform .25s ease; }
+.thumb img:hover { transform: scale(1.03); }
+.thumb figcaption { padding: 12px; color: #bfbfbf; font-size: .95rem; }
+
+/* Booking form */
+.form-grid { display: grid; grid-template-columns: 1fr; gap: 12px; background: #0f0f10; padding: 18px; border-radius: 10px; }
+.form-grid label { display: block; color: #d6d6d6; }
+.form-grid input, .form-grid textarea { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.04); background: rgba(0,0,0,0.45); color: #fff; }
+.form-grid .full { grid-column: 1 / -1; }
+.form-actions { display: flex; gap: 12px; align-items: center; justify-content: flex-start; }
+
+/* Testimonials */
+.test-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media(min-width:800px){ .test-grid { grid-template-columns: repeat(3,1fr); } }
+blockquote { background: #0f0f10; padding: 18px; border-radius: 10px; color: #eaeaea; }
+blockquote footer { margin-top: 12px; color: #a6a6a6; font-size: .9rem; }
+
+/* Contact */
+.contact-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media(min-width:700px){ .contact-grid { grid-template-columns: 1fr 1fr; } }
+.card { background: #0f0f10; padding: 18px; border-radius: 10px; }
+
+/* Footer */
+.site-footer { border-top: 1px solid rgba(255,255,255,0.03); padding: 18px 0; text-align: center; color: #a8a8a8; }
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+.lightbox img { max-width: 100%; max-height: 90vh; border-radius: 6px; box-shadow: 0 10px 60px rgba(0,0,0,0.8); }
+.lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Floating WhatsApp button */
+.wh-floating {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: #25D366;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  box-shadow: 0 8px 30px rgba(37,211,102,0.14);
+  text-decoration: none;
+  z-index: 999;
+}
+.wh-floating svg { display: block; }
+
+/* Utility */
+.container > h2 { margin-bottom: 8px; font-size: 1.6rem; }
+.label-text { display: block; margin-bottom: 6px; font-size: .95rem; color: #d0d0d0; }
+
+/* Small screens fixes */
+@media(max-width:420px){
+  .site-title { font-size: 2rem; }
+  .logo { width: 76px; height: 76px; }
+}
